@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Niche Hort Diagnosis Bookmarklet</title>
+    <!-- AI-GENERATED: Autonomous Wealth Engine -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6359393063754801" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c5f2d;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .instructions h2 {
+            color: #388e3c;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .instructions p {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        .instructions .drag-drop {
+            font-weight: bold;
+            color: #1b5e20;
+        }
+        .bookmarklet-button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white !important;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .bookmarklet-button:hover {
+            background-color: #388e3c;
+        }
+        .copy-button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .copy-button:hover {
+            background-color: #f57c00;
+        }
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow-x: auto;
+            text-align: left;
+            font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: center;
+            width: 100%;
+            background-color: #e0e0e0;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .awe-ad-slot {
+            text-align: center;
+            padding: 15px;
+            margin: 20px 0;
+            background: #f0f0f0;
+            color: #888;
+            width: 100%;
+            max-width: 728px; /* Common ad size */
+            box-sizing: border-box;
+            display: block; /* Ensure it behaves like a block element for ads */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Assisted Niche Horticultural Pest & Disease Diagnosis</h1>
+        <p>Drag the bookmarklet below to your browser's bookmarks bar to quickly access AI-powered diagnosis for your specialty crops.</p>
+
+        <div class="instructions">
+            <h2>How to Install</h2>
+            <p><span class="drag-drop">1. Drag and Drop:</span> Click and hold the "Diagnose My Plant" button below, then drag it to your browser's bookmarks bar (usually located at the top of your browser window).</p>
+            <p>Alternatively, right-click the button, select "Bookmark This Link" or "Add to Bookmarks", and save it.</p>
+            <p>Once installed, simply click the bookmarklet while on any webpage to analyze an image of your plant.</p>
+        </div>
+
+        <a href="javascript:(function(){
+            /* AI-Assisted Niche Horticultural Pest & Disease Diagnosis Bookmarklet */
+            const scriptUrl = 'https://cdn.jsdelivr.net/npm/sweetalert2@11'; /* Using SweetAlert2 for UI */
+            const cssLink = document.createElement('link');
+            cssLink.rel = 'stylesheet';
+            cssLink.href = scriptUrl;
+            document.head.appendChild(cssLink);
+
+            const swalScript = document.createElement('script');
+            swalScript.src = scriptUrl;
+            swalScript.onload = function() {
+                Swal.fire({
+                    title: 'Upload Plant Image',
+                    html: `
+                        <p>Select an image of your plant showing pests or diseases.</p>
+                        <input type='file' id='plantImage' accept='image/*'>
+                        <div id='diagnosisResult' style='margin-top: 20px; text-align: left; color: #333;'></div>
+                        <div class='awe-ad-slot' style='text-align:center; padding:15px; margin: 20px 0; background:#f0f0f0; color:#888;'>[ Advertisement Placeholder ]</div>
+                    `,
+                    showCancelButton: true,
+                    confirmButtonText: 'Analyze Image',
+                    cancelButtonText: 'Cancel',
+                    preConfirm: () => {
+                        const fileInput = document.getElementById('plantImage');
+                        if (!fileInput.files || fileInput.files.length === 0) {
+                            Swal.showValidationMessage('Please select an image.');
+                            return false;
+                        }
+                        return fileInput.files[0];
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        const file = result.value;
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const imageUrl = e.target.result;
+                            const aiEndpoint = 'https://your-ai-diagnosis-api.com/diagnose'; /* Replace with your actual API endpoint */
+                            const fakeApiDelay = 3000; /* Simulate AI processing time */
+
+                            Swal.fire({
+                                title: 'Analyzing...',
+                                html: 'AI is processing your plant image. This may take a moment. <div class="awe-ad-slot" style="text-align:center; padding:15px; margin: 20px 0; background:#f0f0f0; color:#888;">[ Advertisement Placeholder ]</div>',
+                                allowOutsideClick: false,
+                                showConfirmButton: false,
+                                didOpen: () => {
+                                    setTimeout(() => { /* Simulate API call */
+                                        const fakeDiagnosis = {
+                                            plantType: 'Heirloom Tomato',
+                                            ailment: 'Early Blight',
+                                            severity: 'Moderate',
+                                            description: 'Dark, circular lesions with concentric rings on leaves, often starting on lower leaves.',
+                                            recommendations: [
+                                                'Remove and destroy infected leaves promptly.',
+                                                'Improve air circulation around plants.',
+                                                'Apply organic fungicides (e.g., copper-based or biological) to uninfected parts of the plant.',
+                                                'Avoid overhead watering.',
+                                                'Rotate crops annually.'
+                                            ],
+                                            treatmentType: 'Minimally Invasive/Organic'
+                                        };
+
+                                        const diagnosisHtml = `
+                                            <h4>Diagnosis Results:</h4>
+                                            <p><strong>Plant Type:</strong> ${fakeDiagnosis.plantType}</p>
+                                            <p><strong>Identified Ailment:</strong> <strong style="color: #d32f2f;">${fakeDiagnosis.ailment}</strong></p>
+                                            <p><strong>Severity:</strong> ${fakeDiagnosis.severity}</p>
+                                            <p><strong>Description:</strong> ${fakeDiagnosis.description}</p>
+                                            <h4>Treatment Recommendations (${fakeDiagnosis.treatmentType}):</h4>
+                                            <ul>
+                                                ${fakeDiagnosis.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                                            </ul>
+                                            <p style="font-size: 0.8em; color: #777;">*This is an AI-generated diagnosis. Consult a local horticultural expert for definitive advice.</p>
+                                            <div class='awe-ad-slot' style='text-align:center; padding:15px; margin: 20px 0; background:#f0f0f0; color:#888;'>[ Advertisement Placeholder ]</div>
+                                        `;
+                                        Swal.fire({
+                                            title: 'Diagnosis Complete',
+                                            html: diagnosisHtml,
+                                            icon: 'info',
+                                            confirmButtonText: 'Close',
+                                            width: '700px',
+                                            customClass: {
+                                                popup: 'swal2-popup-wide'
+                                            }
+                                        });
+                                    }, fakeApiDelay);
+                                }
+                            });
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            };
+            document.body.appendChild(swalScript);
+        })()" class="bookmarklet-button">Diagnose My Plant</a>
+
+        <p style="margin-top: 30px; font-size: 0.9em; color: #666;">This bookmarklet requires a modern browser with JavaScript enabled.</p>
+
+        <div class="awe-ad-slot">[ Advertisement Placeholder ]</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Autonomous Wealth Engine. All rights reserved.</p>
+        <p>This tool is powered by AI and aims to provide helpful diagnostic information. It is not a substitute for professional horticultural advice. <a href="https://artificial-intelligence-act.eu/" target="_blank">EU AI Act Disclosure</a>: This service may utilize AI models, and its outputs should be reviewed critically and validated by human experts.</p>
+    </footer>
+</body>
+</html>
